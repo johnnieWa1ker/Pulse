@@ -17,5 +17,4 @@ Pod::Spec.new do |spec|
   end
 
   spec.dependency 'Logging'
-  spec.dependency 'Sources/PulseCore/**/'
 end
