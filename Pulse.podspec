@@ -10,11 +10,11 @@ Pod::Spec.new do |spec|
   spec.source                = { :git => "https://github.com/johnnieWa1ker/Pulse" }
   spec.ios.deployment_target = '13.0'
   spec.source_files          = 'Sources/Pulse/**/*.{swift}'
-#  spec.default_subspecs      = 'PulseCore'
+  spec.default_subspecs      = 'PulseCore'
     
   spec.subspec 'PulseCore' do |subspec|
-    subspec.dependency 'PulseCore'
     subspec.source_files = 'Sources/PulseCore/*'
+    subspec.dependency 'Pulse/PulseCore'
   end
   
   spec.dependency 'Logging'
