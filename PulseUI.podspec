@@ -10,4 +10,6 @@ Pod::Spec.new do |spec|
   spec.source                = { :git => "https://github.com/johnnieWa1ker/Pulse" }
   spec.ios.deployment_target = '13.0'
   spec.source_files          = 'Sources/PulseUI/**/*'
+
+  spec.dependency 'PulseCore'
 end
