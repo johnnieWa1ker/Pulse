@@ -12,6 +12,14 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
 
   subspec 'PulseCore' do |subspec|
+    subspec.source_files = '/'
+  end
+
+  subspec 'PulseUI' do |subspec|
+    subspec.source_files = '/'
+  end
+
+  spec.subspec 'PulseCore' do |subspec|
     subspec.source_files = 'Sources/PulseCore/**/*.{swift}'
   end
 
