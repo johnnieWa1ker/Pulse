@@ -16,5 +16,5 @@ Pod::Spec.new do |spec|
   end
 
   spec.dependency 'Logging'
-  spec.dependency `Pulse/PulseCore`
+  spec.dependency `PulseCore`
 end
