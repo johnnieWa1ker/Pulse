@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
     
   spec.subspec 'PulseCore' do |subspec|
     subspec.dependency 'PulseCore'
-    subspec.source_files = 'Sources/PulseCore/*'
+    subspec.source_files = 'Sources/PulseCore/**/*.{swift}'
   end
   
   spec.dependency 'Logging'
