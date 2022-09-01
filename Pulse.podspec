@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
   spec.default_subspecs      = 'PulseCore'
     
   spec.subspec 'PulseCore' do |subspec|
+    subspec.dependency 'PulseCore'
     subspec.source_files = 'Sources/PulseCore/*'
   end
   
